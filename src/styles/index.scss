@@ -1,0 +1,48 @@
+@import "./fonts.scss";
+@import "./vars.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Futura";
+  font-size: 24px;
+  background-color: var(--lightGray);
+}
+
+button,
+input {
+  font-family: "Futura";
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  background-color: unset;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: lighter;
+  color: var(--primary);
+}
