@@ -1,0 +1,59 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--gray2);
+
+  span {
+    padding: 12px 15px;
+    width: 100%;
+  }
+
+  &:hover .removeButton {
+    opacity: 0.5;
+  }
+
+  &.completed {
+    .checkBox::before {
+      background-image: url("../../assets/icons/check.svg");
+    }
+
+    span {
+      text-decoration: line-through;
+      color: var(--gray);
+    }
+  }
+}
+
+.checkBox {
+  height: 100%;
+  padding: 7px;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--gray);
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.removeButton {
+  margin-left: 10px;
+  margin-right: 20px;
+  min-width: 28px;
+  height: 28px;
+  opacity: 0;
+  background-image: url("../../assets/icons/cancel.svg");
+  background-size: 28px 28px;
+  background-position: center;
+
+  &:hover {
+    opacity: 1 !important;
+  }
+}
