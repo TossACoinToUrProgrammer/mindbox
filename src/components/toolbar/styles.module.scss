@@ -1,0 +1,41 @@
+.toolbar {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 450;
+  color: var(--darkGray);
+  border-bottom: 1px solid var(--gray2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
+    0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
+    0 17px 2px -6px rgba(0, 0, 0, 0.2);
+
+  button {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+
+.filters {
+  display: flex;
+
+  button {
+    padding: 0 7px;
+    margin: 3px;
+    text-transform: capitalize;
+  }
+}
+
+.activeFilter {
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+.clearButton {
+  visibility: hidden;
+
+  &.visible {
+    visibility: visible;
+  }
+}
